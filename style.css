@@ -1,0 +1,190 @@
+body {
+  max-height: 2000px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #f4eaf1;
+}
+
+#about {
+  padding-top: 55px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sub-title {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.paragraf {
+  font-size: 18px;
+  text-align: center;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--secondaryTextColor);
+  position: relative;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+#skills {
+  padding: 6rem 0;
+  background: #f4eaf1;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.education {
+  display: flex;
+  gap: 2rem;
+}
+
+.education .line {
+  padding: 0 0.7rem;
+}
+
+.education .line div {
+  width: 2px;
+  height: 100%;
+  background: #8e83a9;
+  position: relative;
+}
+
+.education-info p {
+  margin: 0.6rem 0 1.4rem;
+}
+
+.education-years {
+  margin-bottom: 3rem;
+}
+
+.education .line div:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #8e83a9;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+}
+
+.skills-right ul {
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+
+.svg {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#portofolio {
+  background-color: #f4eaf1;
+}
+
+#contact {
+  padding-bottom: 15px;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-item-icon {
+  margin-right: 15px;
+  background: #f4eaf1;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.contact-item-icon svg {
+  width: 22px;
+  height: 22px;
+}
+.contact-item-detail h4 {
+  margin-bottom: 5px;
+}
+
+.btn-primary {
+  background-color: #7b6aa6;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+footer {
+  padding-top: 180px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.footer-icons {
+  margin-bottom: 1rem;
+}
+
+.footer-icons a {
+  margin: 0 0.5rem;
+}
+
+.footer-icons svg {
+  fill: #8e83a9;
+}
+
+.footer-icons a:hover svg {
+  fill: #8e83a9;
+}
